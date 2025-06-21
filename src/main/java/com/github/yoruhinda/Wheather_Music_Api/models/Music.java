@@ -5,10 +5,16 @@ public class Music {
     private Climate climate;
 
     public Music(Climate climate){
-
+        getHumorMusical();
     }
 
     private void getHumorMusical(){
-
+        switch(climate){
+            case RAIN -> genre = "acoustic";
+            case SNOW -> genre = "jazz";
+            case CLEAR -> genre = "pop";
+            case CLOUDS -> genre = "indie";
+            case THUNDERSTORM -> genre = "sad";
+        }
     }
 }
