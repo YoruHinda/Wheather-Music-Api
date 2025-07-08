@@ -12,10 +12,4 @@ public class WeatherMusicApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(WeatherMusicApiApplication.class, args);
 	}
-
-	@Bean
-	public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder){
-		return restTemplateBuilder.build();
-    }
-
 }
